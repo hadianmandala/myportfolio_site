@@ -1,0 +1,114 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Skills - My Portfolio{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4">Skills</h1>
+
+  <style>
+    .circle-skill {
+      font-size: 1.2rem;
+      color: #0d6efd;
+      letter-spacing: 0.2rem;
+    }
+    .circle-skill .filled {
+      color: #0d6efd;
+    }
+    .circle-skill .empty {
+      color: #ccc;
+    }
+  </style>
+
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h5>Programming Languages</h5>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Python
+          <span class="circle-skill">
+            ● ● ● ● ●
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          JavaScript
+          <span class="circle-skill">
+            ● ● ● ○ ○
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          SQL
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          C++
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <h5>Frameworks & Tools</h5>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Django
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Bootstrap
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Git & GitHub
+          <span class="circle-skill">
+            ● ● ● ● ●
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Docker
+          <span class="circle-skill">
+            ● ● ○ ○ ○
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-12">
+      <h5>Soft Skills</h5>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Problem Solving
+          <span class="circle-skill">
+            ● ● ● ● ●
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Teamwork
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Communication
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Time Management
+          <span class="circle-skill">
+            ● ● ● ● ○
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

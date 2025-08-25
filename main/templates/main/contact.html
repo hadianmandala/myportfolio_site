@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% block title %}Contact - My Portfolio{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4">Contact Me</h1>
+
+  {% if sent %}
+    <div class="alert alert-success">Thank you! Your message has been sent.</div>
+  {% endif %}
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</div>
+{% endblock %}
