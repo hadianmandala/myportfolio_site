@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Subjects - My Portfolio{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4">Subjects I Cover</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li>Python Programming (beginner to advanced)</li>
+        <li>Web Development (Django, Flask, HTML/CSS, JavaScript)</li>
+        <li>Data Science & Machine Learning</li>
+        <li>Database Design (SQL, PostgreSQL)</li>
+        <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <li>Algorithms and Data Structures</li>
+        <li>Version Control (Git, GitHub)</li>
+        <li>Deployment (PythonAnywhere, Heroku)</li>
+        <li>Responsive UI Design (Bootstrap)</li>
+        <li>API Integration & RESTful Services</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

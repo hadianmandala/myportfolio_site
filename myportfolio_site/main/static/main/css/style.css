@@ -1,0 +1,49 @@
+/* Transition */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* DARK MODE AKTIF SAAT html MEMILIKI class "dark-mode" */
+html.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Container, body, card, dsb */
+html.dark-mode body,
+html.dark-mode .container,
+html.dark-mode .card,
+html.dark-mode .form-control,
+html.dark-mode .list-group-item {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+}
+
+/* Navbar */
+html.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+html.dark-mode .navbar .nav-link,
+html.dark-mode .navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Button */
+html.dark-mode .btn {
+  background-color: #444 !important;
+  color: #fff !important;
+  border-color: #888 !important;
+}
+
+html.dark-mode .btn-outline-light {
+  border-color: #ccc;
+}
+
+/* Input field */
+html.dark-mode input,
+html.dark-mode textarea {
+  background-color: #2c2c2c !important;
+  color: #fff !important;
+  border-color: #444;
+}

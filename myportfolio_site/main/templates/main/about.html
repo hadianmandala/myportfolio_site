@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}About - My Portfolio{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4">About Me</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{% static 'main/img/profile.jpg' %}" class="img-fluid rounded-circle mb-3" alt="My Photo">
+    </div>
+    <div class="col-md-8">
+      <p>Hello! I'm a passionate data scientist / web developer / software engineer, dedicated to building meaningful and user-friendly digital solutions. I enjoy solving real-world problems with clean and efficient code.</p>
+      <p>With a background in Computer Science, I have experience in designing and deploying web applications, performing data analysis, and collaborating on projects from idea to implementation.</p>
+      <ul>
+        <li><strong>Name:</strong> Hadian Mandala Putra</li>
+        <li><strong>Location:</strong> Lombok, Indonesia</li>
+        <li><strong>Email:</strong> hadianmandalap@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

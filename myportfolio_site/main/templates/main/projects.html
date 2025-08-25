@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Projects - My Portfolio{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4">Projects</h1>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio Website</h5>
+          <p class="card-text">A Django-based personal website with Bootstrap integration, including contact form and project showcase.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Data Analysis Dashboard</h5>
+          <p class="card-text">An interactive dashboard for visualizing sales data using Streamlit and Matplotlib.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
